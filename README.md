@@ -25,7 +25,7 @@ Then, it picks new hyperparameters that maximize the ratio: `l(x) / g(x)`. TPE s
 
 <figure>
 <p align="center">
-  <img src="img/HyperoptsbayesianHPexploration.png" width="400" />
+  <img src="img/HyperoptsbayesianHPexploration.png" width="600" />
 </p>
   <figcaption align="center"><b>Figure.</b> Hyperopt's bayesian HP exploration. The true loss function is unknown (blue dotted). We only see scattered evaluations (blue dots). The optimizer builds a model of the landscape (orange). It also tracks uncertainty (grey).</figcaption>
 </figure>
