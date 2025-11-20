@@ -2,7 +2,7 @@
 
 <figure>
 <p align="center">
-  <img src="img/HPsearches.png" width="400" />
+  <img src="img/HPsearches.png" width="500" />
 </p>
 <figcaption align="center"><b>Figure.</b> Comparison of hyperparameter search strategies.</figcaption>
 </figure>
@@ -25,7 +25,7 @@ Then, it picks new hyperparameters that maximize the ratio: `l(x) / g(x)`. TPE s
 
 <figure>
 <p align="center">
-  <img src="img/HyperoptsbayesianHPexploration.png" width="200" />
+  <img src="img/HyperoptsbayesianHPexploration.png" width="400" />
 </p>
   <figcaption align="center"><b>Figure.</b> Hyperopt's bayesian HP exploration. The true loss function is unknown (blue dotted). We only see scattered evaluations (blue dots). The optimizer builds a model of the landscape (orange). It also tracks uncertainty (grey).</figcaption>
 </figure>
@@ -38,7 +38,7 @@ Instead of modeling loss as a function of hyperparameters, TPE models hyperparam
 
 <figure>
 <p align="center">
-  <img src="img/HyperoptsTPEalgorithm.png" width="400" />
+  <img src="img/HyperoptsTPEalgorithm.png" width="500" />
 </p>
   <figcaption align="center"><b>Figure.</b> Hyperopt's TPE algorithm - the way it chooses the next hyperparameters to try. Left: It splits past trials into good and bad results. Right: It models where good/bad hyperparameters lie and sample from the good region.</figcaption>
 </figure>
