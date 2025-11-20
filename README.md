@@ -38,7 +38,7 @@ Instead of modeling loss as a function of hyperparameters, TPE models hyperparam
 
 <figure>
 <p align="center">
-  <img src="img/HyperoptsTPEalgorithm.png" width="500" />
+  <img src="img/HyperoptsTPEalgorithm.png" width="650" />
 </p>
   <figcaption align="center"><b>Figure.</b> Hyperopt's TPE algorithm - the way it chooses the next hyperparameters to try. Left: It splits past trials into good and bad results. Right: It models where good/bad hyperparameters lie and sample from the good region.</figcaption>
 </figure>
