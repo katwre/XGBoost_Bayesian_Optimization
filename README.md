@@ -1,4 +1,4 @@
-# XGBoost model tuning through Bayesian Optimization of the hyperparameter space with Hyperopt
+# XGBoost model tuning through Bayesian Optimization of the hyperparameter space with Hyperopt¹
 
 <figure>
 <p align="center">
@@ -52,4 +52,4 @@ In figure above the left graph: we try several hyperparameter values. Each trial
 After tuning the hyperparameters with Hyperopt, we use model interpretation techniques to explain the predictions made by the trained model. SHAP (Shapley Additive Explanations) and LIME (Local Interpretable Model-Agnostic Explanations) are two key methods used to gain insights into how the model makes predictions. These techniques allow us to interpret which biomarkers/features are important, how they affect the predicted outcome, and how individual predictions are formed. SHAP values allow us to interpret feature impacts for both global trends (show the overall feature importance across all predictions) and specific instances (local explanations break down the contribution of each feature to individual predictions), with visualizations like waterfall, summary, and interaction plots. LIME focuses on local explanations: it approximates the black-box model with a simpler surrogate model (e.g., linear regression) for each instance, generating new data points to understand the model’s behavior for individual predictions.
 
 
-This project is the result of the [Swiss Institute of Bioinformatics (SIB) workshop Ensuring More Accurate, Generalisable, and Interpretable Machine Learning Models for Bioinformatics](https://doi.org/10.5281/zenodo.14196882).
+[1] This project is the result of the [Swiss Institute of Bioinformatics (SIB) workshop Ensuring More Accurate, Generalisable, and Interpretable Machine Learning Models for Bioinformatics](https://doi.org/10.5281/zenodo.14196882).
