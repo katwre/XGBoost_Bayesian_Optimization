@@ -1,5 +1,23 @@
 # XGBoost model tuning through Bayesian Optimization of the hyperparameter space with Hyperopt¹
 
+
+
+## Notebooks overview
+
+The workflow of this project is documented across the notebooks in the [notebooks](notebooks) directory:
+
+1. **Baseline XGBoost modeling** - [01_project_OPERA_XGBoost.ipynb](notebooks/01_project_OPERA_XGBoost.ipynb)  
+  HEre, I explore the OPERA dataset, inspect target distributions and feature correlations, reduce redundancy by removing highly correlated variables, and train a first XGBoost classifier to predict `BPISeverityChange`. I then evaluate class imbalance, adjust the decision threshold, test histogram-based training with different `max_bin` values, and run a grid search to obtain a stronger baseline model.
+
+2. **Bayesian hyperparameter optimization with Hyperopt** - [02_project_OPERA_hyperopt.ipynb](notebooks/02_project_OPERA_hyperopt.ipynb)  
+  This notebook extends the baseline approach by using Hyperopt library and the TPE algorithm to search the XGBoost hyperparameter space more efficiently than grid search. It defines prior distributions for key hyperparameters, runs optimization trials, visualizes how the search concentrates on promising regions, and then evaluates the search again with stratified cross-validation. It also includes a nested search-space example comparing XGBoost with logistic regression.
+
+3. **Model interpretation with SHAP and LIME** - [03_project_OPERA_model_explanation.ipynb](notebooks/03_project_OPERA_model_explanation.ipynb)  
+  Here, I train an XGBoost model on the selected feature set and interpret its predictions using SHAP and LIME. The analysis includes global feature importance, local explanations for individual patients, waterfall and beeswarm plots, SHAP interaction analysis, and local surrogate explanations with LIME to better understand which variables drive the model’s predictions.
+
+
+## Methods
+
 <figure>
 <p align="center">
   <img src="img/HPsearches.png" width="500" />
